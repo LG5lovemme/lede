@@ -128,6 +128,12 @@ jobs:
           # CONFIG_PACKAGE_kmod-usb2-pci=y
           # CONFIG_PACKAGE_kmod-usb3=y
           CONFIG_PACKAGE_kmod-usb-net-rndis=y
+          CONFIG_PACKAGE_kmod-usb-net-cdc-ether=y
+          CONFIG_PACKAGE_kmod-usb-net=y
+          CONFIG_PACKAGE_kmod-usb-printer=y
+          CONFIG_PACKAGE_kmod-usb-storage=y
+          CONFIG_PACKAGE_kmod-usb-storage-extras=y
+          CONFIG_PACKAGE_kmod-usb-storage-uas=y
           # EOF
 
           # 常用LuCI插件选择:
