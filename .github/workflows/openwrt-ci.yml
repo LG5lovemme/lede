@@ -55,7 +55,11 @@ jobs:
           git clone https://github.com/openwrt-develop/luci-theme-atmaterial
           git clone https://github.com/rosywrt/luci-theme-rosy
           git clone https://github.com/jerrykuku/luci-theme-argon
-          git clone https://github.com/kenzok8/small-package package/small-package
+          git clone https://github.com/LG5lovemmt/openwrt-packages
+          git clone https://github.com/sirpdboy/netspeedtest package/netspeedtest
+          git clone https://github.com/LG5lovemmt/openwrt-packages
+          git clone https://github.com/LG5lovemmt/openwrt-package
+          git clone https://github.com/LG5lovemmt/small-package
 
           # sudo mkdir -p -m 777 /mnt/openwrt/bin /mnt/openwrt/build_dir/host /mnt/openwrt/build_dir/hostpkg /mnt/openwrt/dl /mnt/openwrt/feeds /mnt/openwrt/staging_dir
           # ln -s /mnt/openwrt/bin ./bin
@@ -181,12 +185,14 @@ jobs:
           CONFIG_PACKAGE_luci-app-uhttpd=y
           CONFIG_PACKAGE_luci-app-ipsec-server=y
           CONFIG_PACKAGE_luci-app-pptp-server=y
-          CONFIG_PACKAGE_luci-app-quickstart=y
-          CONFIG_PACKAGE_luci-app-netdata=y
           CONFIG_PACKAGE_luci-app-diskman=y
           CONFIG_PACKAGE_luci-app-argon-config=y
           CONFIG_PACKAGE_luci-app-syncdial=y
           CONFIG_PACKAGE_luci-app-mwan3=y
+          CONFIG_PACKAGE_luci-app-jd-dailybonus=y
+          CONFIG_PACKAGE_luci-app-netspeedtest=y
+          CONFIG_PACKAGE_luci-app-netdata=y
+          CONFIG_PACKAGE_luci-app-quickstart=y
           EOF
 
           # LuCI主题:
