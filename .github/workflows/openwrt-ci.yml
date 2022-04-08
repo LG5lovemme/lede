@@ -54,11 +54,12 @@ jobs:
           cd openwrt-packages
           git clone https://github.com/openwrt-develop/luci-theme-atmaterial
           git clone https://github.com/rosywrt/luci-theme-rosy
-          git clone https://github.com/jerrykuku/luci-theme-argon.git
           git clone https://github.com/LG5lovemmt/openwrt-packages
           git clone https://github.com/LG5lovemmt/netspeedtest
           git clone https://github.com/LG5lovemmt/openwrt-package
           git clone https://github.com/LG5lovemmt/small-package
+          git clone https://github.com/LG5lovemmt/luci-theme-infinityfreedom
+          git clone https://github.com/LG5lovemmt/luci-theme-darkmatter
 
           # sudo mkdir -p -m 777 /mnt/openwrt/bin /mnt/openwrt/build_dir/host /mnt/openwrt/build_dir/hostpkg /mnt/openwrt/dl /mnt/openwrt/feeds /mnt/openwrt/staging_dir
           # ln -s /mnt/openwrt/bin ./bin
@@ -163,7 +164,7 @@ jobs:
           # CONFIG_PACKAGE_luci-app-docker=y
           CONFIG_PACKAGE_luci-app-frpc=y
           CONFIG_PACKAGE_luci-app-frps=y
-          CONFIG_PACKAGE_luci-app-hd-idle=y
+          # CONFIG_PACKAGE_luci-app-hd-idle=y
           # CONFIG_PACKAGE_luci-app-kodexplorer=y
           # CONFIG_PACKAGE_luci-app-minidlna=y
           # CONFIG_PACKAGE_luci-app-openvpn=y
@@ -174,7 +175,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Server=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_ShadowsocksR_Socks=y
           CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_V2ray=y
-          CONFIG_PACKAGE_luci-app-ttyd=y
+          # CONFIG_PACKAGE_luci-app-ttyd=y
           CONFIG_PACKAGE_luci-app-v2ray-server=y
           # CONFIG_PACKAGE_luci-app-verysync=y
           CONFIG_PACKAGE_luci-app-webadmin=y
@@ -192,9 +193,9 @@ jobs:
           CONFIG_PACKAGE_luci-app-uhttpd=y
           CONFIG_PACKAGE_luci-app-ipsec-server=y
           CONFIG_PACKAGE_luci-app-pptp-server=y
-          CONFIG_PACKAGE_luci-app-diskman=y
+          # CONFIG_PACKAGE_luci-app-diskman=y
           # CONFIG_PACKAGE_luci-app-argon-config=y
-          CONFIG_PACKAGE_luci-app-syncdial=y
+          # CONFIG_PACKAGE_luci-app-syncdial=y
           # CONFIG_PACKAGE_luci-app-mwan3=y
           # CONFIG_PACKAGE_luci-app-jd-dailybonus=y
           EOF
@@ -202,8 +203,9 @@ jobs:
           # LuCI主题:
           cat >> .config <<EOF
           CONFIG_PACKAGE_luci-theme-netgear=y
-          CONFIG_PACKAGE_Luci-theme-argon=y
           CONFIG_PACKAGE_luci-theme-rosy=y
+          CONFIG_PACKAGE_luci-theme-infinityfreedom=y
+          CONFIG_PACKAGE_luci-theme-darkmatter=y
           EOF
 
           # 常用软件包:
