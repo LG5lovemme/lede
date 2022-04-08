@@ -52,12 +52,9 @@ jobs:
           cd package
           mkdir openwrt-packages
           cd openwrt-packages
-          git clone https://github.com/openwrt-develop/luci-theme-atmaterial
           git clone https://github.com/rosywrt/luci-theme-rosy
           git clone https://github.com/LG5lovemmt/openwrt-packages
-          git clone https://github.com/LG5lovemmt/netspeedtest
-          git clone https://github.com/LG5lovemmt/openwrt-package
-          git clone https://github.com/LG5lovemmt/small-package
+          # git clone https://github.com/LG5lovemmt/small-package
           git clone https://github.com/LG5lovemmt/luci-theme-infinityfreedom
           git clone https://github.com/LG5lovemmt/luci-theme-darkmatter
 
